@@ -8,6 +8,12 @@ datasource db {
   relationMode = "prisma"
 }
 
+// To generate the ER diagram after running `npx prisma generate`
+generator erd {
+  provider                  = "prisma-erd-generator"
+  includeRelationFromFields = true
+}
+
 model Profile {
   id       String @id @default(uuid())
   userId   String @unique
