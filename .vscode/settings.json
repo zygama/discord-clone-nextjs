@@ -1,1 +1,6 @@
-{}
+{
+  "emmet.excludeLanguages": [
+    "javascript",
+    "typescript"
+  ],
+}
