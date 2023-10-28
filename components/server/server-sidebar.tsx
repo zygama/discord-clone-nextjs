@@ -69,7 +69,6 @@ const ServerSidebar: React.FC<ServerSidebarProps> = async ({ serverId }) => {
   const members = server?.members.filter(
     (member) => member.profileId !== profile.id
   );
-  console.log("server:", server);
 
   if (!server) {
     return redirect("/");
